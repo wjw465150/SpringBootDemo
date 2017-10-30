@@ -2,7 +2,7 @@ package com.example.demo;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties(prefix = "my")  //´ÓÊôĞÔÎÄ¼ş×Ô¶¯×¢ÈëÊôĞÔ
+@ConfigurationProperties(prefix = "my")  //ä»å±æ€§æ–‡ä»¶è‡ªåŠ¨æ³¨å…¥å±æ€§
 public class ConfigBean {
 
 	private String name;

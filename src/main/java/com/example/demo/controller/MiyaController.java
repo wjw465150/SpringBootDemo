@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MiyaController {
 
-	@Value("${my.name}")  //´ÓÊôĞÔÎÄ¼ş¸³Öµ
+	@Value("${my.name}")  //ä»å±æ€§æ–‡ä»¶èµ‹å€¼
 	private String name;
 	@Value("${my.age}")
 	private int age;

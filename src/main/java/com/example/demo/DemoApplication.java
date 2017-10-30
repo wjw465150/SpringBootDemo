@@ -9,8 +9,8 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
-@SpringBootApplication  //@wjw ÊÇSprnig BootÏîÄ¿µÄºËĞÄ×¢½â£¬Ö÷ÒªÄ¿µÄÊÇ¿ªÆô×Ô¶¯ÅäÖÃ¡£
-@EnableConfigurationProperties({ ConfigBean.class, User.class }) // ĞèÒª×Ô¶¯×¢ÈëÊôĞÔÖµµÄbean
+@SpringBootApplication  //@wjw æ˜¯Sprnig Booté¡¹ç›®çš„æ ¸å¿ƒæ³¨è§£ï¼Œä¸»è¦ç›®çš„æ˜¯å¼€å¯è‡ªåŠ¨é…ç½®ã€‚
+@EnableConfigurationProperties({ ConfigBean.class, User.class }) // éœ€è¦è‡ªåŠ¨æ³¨å…¥å±æ€§å€¼çš„bean
 public class DemoApplication {
 
 	public static void main(String[] args) {

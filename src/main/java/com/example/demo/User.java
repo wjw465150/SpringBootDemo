@@ -5,9 +5,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@PropertySource(value = "classpath:user.properties")  //@wjw Ö¸¶¨ÊôĞÔÎÄ¼şÎ»ÖÃ.To be used in conjunction with @Configuration. 
+@PropertySource(value = "classpath:user.properties")  //@wjw æŒ‡å®šå±æ€§æ–‡ä»¶ä½ç½®.To be used in conjunction with @Configuration. 
 
-@ConfigurationProperties(prefix = "com.forezp")  //@wjw ´ÓÊôĞÔÎÄ¼ş×Ô¶¯×¢ÈëÊôĞÔ
+@ConfigurationProperties(prefix = "com.forezp")  //@wjw ä»å±æ€§æ–‡ä»¶è‡ªåŠ¨æ³¨å…¥å±æ€§
 public class User {
 	private String name;
 	private int age;
