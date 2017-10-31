@@ -20,10 +20,21 @@ public class LucyController {
 	}
 
 	@Autowired
+	//@wjw_note: 注意这种方式创建的实例其实是Spring通过CGLib增强的类,序列化时要特别注意!
 	User user;
 
 	@RequestMapping(value = "/user")
 	public String user() {
 		return user.getName() + user.getAge();
 	}
+
+	@RequestMapping(value = "/user2")
+	public User user2() {
+		//@wjw_note: 不能直接使用自动注入的user,那种方式创建的实例其实是Spring通过CGLib增强的类,序列化时要特别注意!
+		User uu = new User();
+		uu.setName(user.getName());
+		uu.setAge(user.getAge());
+		return uu;
+	}
+
 }
